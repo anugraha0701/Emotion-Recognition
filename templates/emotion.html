@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Emotion Recognition - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Bethany - v4.7.0
+  * Template URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light"><a href="{{ url_for('emotion_page') }}"><span>Emotion Detection</span></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Tools</a></li>
+            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li><a class="getstarted scrollto" href="{{ url_for('no_page') }}">Detect Emotion</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+      <a href="{{ url_for('no_page') }}" class="btn-get-started scrollto">Detect Emotion</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <h2>Facial expressions communicate a lot without any voice.</h2>
+            <h3>This project was performed on a large-scale facial expression recognition database</h3>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
+            <p>
+              Emotion recognition, one of the crucial non-verbal means by which this communication occurs, helps
+identify the mood and state of the person. Human machine collaboration becomes more natural if
+communication happens through the non-verbal means, such as emotions. 
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Deep learning (DL) based emotion detection gives performance better than traditional methods with image processing.</li>
+              <li><i class="ri-check-double-line"></i> Machine Learning algorithms learn to classify data by finding a defining set of conditions that maximizes the difference between data samples of each class. </li>
+              <li><i class="ri-check-double-line"></i> Different algorithms have constraints on how they can partition data, which can be more or less suitable for different datasets. The best algorithm minimizes the classification error on new samples.</li>
+            </ul>
+            <p class="fst-italic">
+              Humans  are  filled with  various emotions,  modern psychology  defines six  basic facial expressions: Happiness, Sadness, Surprise, Fear, Disgust, and Anger as universal emotions. Facial muscles movements help in identifying human emotions. The facial features are the key parameters that can be considered for recognizing emotions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    
+    
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center" data-aos="zoom-in">
+          <h3>Project Objectives</h3>
+          <p>Facial expression recognition (or emotion detection) is an important task for human-computer interaction. During conversations, we instinctively adjust our word choice and tone based on how (we think) other people are engaging. Those with social disorders or visual impairments, and robots that interact with humans may struggle to communicate effectively without non-verbal cues. Facial expression recognition can also give valuable insights into attention patterns and purchase habits, useful for effective product deesign and marketing techniques.</p>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+  
+    {% block content %}
+    
+    {% endblock %}
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Tools Used</h2>
+              <h4>These are the tools that are used to create this project -></h4>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon"><span class="iconify" data-icon="carbon:machine-learning-model"></span></div>
+                  <h4><a href="">Machine Learning</a></h4>
+                  <p>The capability of a machine to imitate intelligent human behavior</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon"><span class="iconify" data-icon="simple-icons:tensorflow"></span></div>
+                  <h4><a href="">TensorFlow</a></h4>
+                  <p>TensorFlow is a free and open-source software library for machine learning and AI</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon"><span class="iconify" data-icon="eos-icons:neural-network"></span></div>
+                  <h4><a href="">Deep Learning</a></h4>
+                  <p>Type of machine learning that closely tries to mimic how the human brain works</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="icon"><span class="iconify" data-icon="file-icons:opencv"></span></div>
+                  <h4><a href="">Open CV</a></h4>
+                  <p>OpenCV is a tool for image processing and performing computer vision tasks</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+  
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Our Team</h2>
+              <h4>Get to know the faces behind the product !</h4>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+
+              <div class="col-lg-6">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="pic"><img src="static/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Jayasurya R</h4>
+                    <span>Backend</span>
+                    <p></p>
+                    <div class="social">
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="pic"><img src="static/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Anugraha S</h4>
+                    <span>Frontend</span>
+                    <p></p>
+                    <div class="social">
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+ 
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="text-center footer-contact" >
+            <h3>For Emotion Detection Proceed to the next page using Detect Emotion Button
+            </h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+      </div>
+      <div class=" text-center text-md-right pt-3 pt-md-0">
+        <h5>CLICK HERE -> </h5>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+  <script src="static/vendor/purecounter/purecounter.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
+
+    
